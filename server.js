@@ -11,9 +11,6 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// Serve static files from the "public" folder
-app.use(express.static("public"));
-
 
 // Database connection
 mongoose
